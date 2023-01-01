@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#009578" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="images/zulul.png" />
+    <title>Pocetna stranica</title>
+  </head>
+  <body>
+    <p>
+      4. labos iz naprednog web-a, link ispod ide na adresu gdje se mogu snimati
+      i ponovno reproducirati zvukovi s mikrofona
+    </p>
+    <a href="/sound">Snimi zvuk</a>
+    <script>
+      navigator.serviceWorker
+        .register("./sw.js", { type: "module" })
+        .then((reg) => console.log("SW registered!", reg))
+        .catch((err) => console.error("Error registering service worker", err));
+    </script>
+  </body>
+</html>

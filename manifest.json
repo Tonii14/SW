@@ -1,0 +1,29 @@
+{
+  "name": "PWALab",
+  "short_name": "PWALab",
+  "start_url": ".",
+  "background_color": "#6dcdb1",
+  "theme_color": "#009578",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "images/zulul.jpg",
+      "sizes": "1280x720",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/zulul.png",
+      "sizes": "240x280",
+      "purpose": "any"
+    },
+    {
+      "src": "images/icon.png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "images/pingvin.png",
+      "sizes": "512x512"
+    }
+  ]
+}
